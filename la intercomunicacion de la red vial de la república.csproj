@@ -10,7 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="FRONTEND\NewFolder\" />
+    <Compile Remove="FRONTEND\NewFolder\**" />
+    <EmbeddedResource Remove="FRONTEND\NewFolder\**" />
+    <None Remove="FRONTEND\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
