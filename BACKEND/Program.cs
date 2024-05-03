@@ -1,4 +1,4 @@
-namespace la_intercomunicacion_de_la_red_vial_de_la_república
+namespace la_intercomunicacion_de_la_red_vial_de_la_república.BACKEND
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new INICIO());
         }
     }
 }
