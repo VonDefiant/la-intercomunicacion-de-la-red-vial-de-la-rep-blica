@@ -186,11 +186,11 @@
             // NOMUNILABEL
             // 
             NOMUNILABEL.AutoSize = true;
-            NOMUNILABEL.Location = new Point(22, 31);
+            NOMUNILABEL.Location = new Point(103, 33);
             NOMUNILABEL.Name = "NOMUNILABEL";
-            NOMUNILABEL.Size = new Size(17, 19);
+            NOMUNILABEL.Size = new Size(0, 19);
             NOMUNILABEL.TabIndex = 0;
-            NOMUNILABEL.Text = "*";
+            NOMUNILABEL.TextAlign = ContentAlignment.MiddleCenter;
             NOMUNILABEL.UseWaitCursor = true;
             NOMUNILABEL.Click += NOMUNILABEL_Click;
             // 
@@ -230,11 +230,10 @@
             // distancialabel
             // 
             distancialabel.AutoSize = true;
-            distancialabel.Location = new Point(15, 31);
+            distancialabel.Location = new Point(102, 31);
             distancialabel.Name = "distancialabel";
-            distancialabel.Size = new Size(17, 19);
+            distancialabel.Size = new Size(0, 19);
             distancialabel.TabIndex = 2;
-            distancialabel.Text = "1";
             distancialabel.TextAlign = ContentAlignment.MiddleCenter;
             distancialabel.UseWaitCursor = true;
             distancialabel.Click += distancialabel_Click;
@@ -256,11 +255,10 @@
             // POBLALABEL
             // 
             POBLALABEL.AutoSize = true;
-            POBLALABEL.Location = new Point(22, 31);
+            POBLALABEL.Location = new Point(106, 31);
             POBLALABEL.Name = "POBLALABEL";
-            POBLALABEL.Size = new Size(17, 19);
+            POBLALABEL.Size = new Size(0, 19);
             POBLALABEL.TabIndex = 1;
-            POBLALABEL.Text = "1";
             POBLALABEL.UseWaitCursor = true;
             POBLALABEL.Click += POBLALABEL_Click;
             // 

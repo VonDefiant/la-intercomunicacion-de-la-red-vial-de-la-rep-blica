@@ -10,7 +10,7 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
     {
         string DBFILE = "Data Source = C://Users//fg144//OneDrive//Documentos//GitHub//la-intercomunicacion-de-la-red-vial-de-la-republica//BACKEND//EXACTUS.db; Version = 3; ";
         string selectedDepartamento;
-
+        string imageFolderPath = "C://Users//fg144//OneDrive//Documentos//GitHub//la-intercomunicacion-de-la-red-vial-de-la-republica//FRONTEND//IMAGENES//DEPARTAMENTOS//";
 
         public INICIO()
         {
@@ -34,7 +34,9 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
             POBLALABEL.Text = poblacionDepartamento;
 
             cargarloslugaresturisticos(departamentoID);
+            MostrarImagenDepartamento(selectedDepartamento);
         }
+
 
         private void lugarescercanosview_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -190,7 +192,7 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
             try
             {
                 string connectionString = DBFILE;
-                string selectQuery = $"SELECT poblacion FROM Departamentos WHERE Nombre = '{departamento}'";
+                string selectQuery = $"SELECT printf('%,d', poblacion) AS Poblacion FROM Departamentos WHERE Nombre = '{departamento}'";
 
 
                 using (SQLiteConnection connection = new SQLiteConnection(connectionString))
@@ -228,9 +230,35 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al obtener la poblacion del departamento: " + ex.Message);
+                MessageBox.Show("Error al obtener el numero de municipios  del departamento: " + ex.Message);
             }
             return tmunicipioDepartamento;
+        }
+
+        private void MostrarImagenDepartamento(string departamento)
+        {
+            try
+            {
+
+                string imagePath = Path.Combine(imageFolderPath, $"{departamento}.jpg");
+
+
+                if (File.Exists(imagePath))
+                {
+
+                    MAPADEPABOX.ImageLocation = imagePath;
+                }
+                else
+                {
+                    MessageBox.Show("La imagen para este departamento no existe.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al mostrar la imagen del departamento: " + ex.Message);
+            }
+
+
         }
     }
 }
