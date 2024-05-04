@@ -16,8 +16,8 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
         {
             InitializeComponent();
             CargarDepartamentosencombobox();
-
-
+            CARGARLUGARESCERCANOS();
+            CARGARLUGARESLEJANOS();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -132,6 +132,53 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
                         DataTable dt = new DataTable();
                         dataAdapter.Fill(dt);
                         lugaresview.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los lugares turísticos: " + ex.Message);
+            }
+        }
+
+        private void CARGARLUGARESCERCANOS()
+        {
+            try
+            {
+                string connectionString = DBFILE;
+                string selectQuery = $"SELECT Nombre FROM LugaresCercanos";
+
+                using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+                {
+                    connection.Open();
+                    using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(selectQuery, connection))
+                    {
+                        DataTable dt = new DataTable();
+                        dataAdapter.Fill(dt);
+                        lugarescercanosview.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los lugares turísticos: " + ex.Message);
+            }
+        }
+        private void CARGARLUGARESLEJANOS()
+        {
+            try
+            {
+                string connectionString = DBFILE;
+                string selectQuery = $"SELECT Nombre FROM LugaresLejanos";
+
+                using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+                {
+                    connection.Open();
+                    using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(selectQuery, connection))
+                    {
+                        DataTable dt = new DataTable();
+                        dataAdapter.Fill(dt);
+                        lugareslejanosview.DataSource = dt;
                     }
                 }
             }
