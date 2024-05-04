@@ -34,6 +34,11 @@
             label1 = new Label();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
+            groupBox11 = new GroupBox();
+            label4 = new Label();
+            dataGridView1 = new DataGridView();
+            groupBox10 = new GroupBox();
+            NOMUNILABEL = new Label();
             groupBox9 = new GroupBox();
             MAPADEPABOX = new PictureBox();
             groupBox8 = new GroupBox();
@@ -53,6 +58,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBox10.SuspendLayout();
             groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MAPADEPABOX).BeginInit();
             groupBox8.SuspendLayout();
@@ -112,6 +120,8 @@
             // groupBox2
             // 
             groupBox2.BackColor = Color.Transparent;
+            groupBox2.Controls.Add(groupBox11);
+            groupBox2.Controls.Add(groupBox10);
             groupBox2.Controls.Add(groupBox9);
             groupBox2.Controls.Add(groupBox8);
             groupBox2.Controls.Add(groupBox7);
@@ -126,6 +136,62 @@
             groupBox2.Size = new Size(1322, 851);
             groupBox2.TabIndex = 4;
             groupBox2.TabStop = false;
+            // 
+            // groupBox11
+            // 
+            groupBox11.Controls.Add(label4);
+            groupBox11.Controls.Add(dataGridView1);
+            groupBox11.Location = new Point(1057, 90);
+            groupBox11.Name = "groupBox11";
+            groupBox11.Size = new Size(253, 184);
+            groupBox11.TabIndex = 8;
+            groupBox11.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.FlatStyle = FlatStyle.Flat;
+            label4.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(25, 19);
+            label4.Name = "label4";
+            label4.Size = new Size(184, 19);
+            label4.TabIndex = 5;
+            label4.Text = "LUGARES TURISTICOS";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 44);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(229, 126);
+            dataGridView1.TabIndex = 4;
+            // 
+            // groupBox10
+            // 
+            groupBox10.Controls.Add(NOMUNILABEL);
+            groupBox10.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox10.ForeColor = Color.White;
+            groupBox10.Location = new Point(16, 173);
+            groupBox10.Name = "groupBox10";
+            groupBox10.RightToLeft = RightToLeft.No;
+            groupBox10.Size = new Size(253, 67);
+            groupBox10.TabIndex = 10;
+            groupBox10.TabStop = false;
+            groupBox10.Text = "CANTIDAD DE MUNICIPIOS";
+            groupBox10.UseWaitCursor = true;
+            // 
+            // NOMUNILABEL
+            // 
+            NOMUNILABEL.AutoSize = true;
+            NOMUNILABEL.Location = new Point(22, 31);
+            NOMUNILABEL.Name = "NOMUNILABEL";
+            NOMUNILABEL.Size = new Size(17, 19);
+            NOMUNILABEL.TabIndex = 0;
+            NOMUNILABEL.Text = "*";
+            NOMUNILABEL.UseWaitCursor = true;
             // 
             // groupBox9
             // 
@@ -244,9 +310,9 @@
             // 
             groupBox4.Controls.Add(label3);
             groupBox4.Controls.Add(lugareslejanosview);
-            groupBox4.Location = new Point(1048, 163);
+            groupBox4.Location = new Point(1057, 280);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(253, 395);
+            groupBox4.Size = new Size(253, 387);
             groupBox4.TabIndex = 7;
             groupBox4.TabStop = false;
             // 
@@ -276,9 +342,9 @@
             // 
             groupBox3.Controls.Add(label2);
             groupBox3.Controls.Add(lugarescercanosview);
-            groupBox3.Location = new Point(16, 163);
+            groupBox3.Location = new Point(16, 261);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(253, 395);
+            groupBox3.Size = new Size(253, 406);
             groupBox3.TabIndex = 6;
             groupBox3.TabStop = false;
             // 
@@ -301,7 +367,7 @@
             lugarescercanosview.Location = new Point(8, 61);
             lugarescercanosview.Name = "lugarescercanosview";
             lugarescercanosview.RowTemplate.Height = 25;
-            lugarescercanosview.Size = new Size(233, 317);
+            lugarescercanosview.Size = new Size(233, 330);
             lugarescercanosview.TabIndex = 4;
             lugarescercanosview.CellContentClick += lugarescercanosview_CellContentClick;
             // 
@@ -320,6 +386,11 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
+            groupBox11.ResumeLayout(false);
+            groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBox10.ResumeLayout(false);
+            groupBox10.PerformLayout();
             groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)MAPADEPABOX).EndInit();
             groupBox8.ResumeLayout(false);
@@ -362,5 +433,10 @@
         private DataGridView DEPAPREVIOSVIEW;
         private PictureBox MAPADEPABOX;
         private GroupBox groupBox9;
+        private GroupBox groupBox11;
+        private Label label4;
+        private DataGridView dataGridView1;
+        private GroupBox groupBox10;
+        private Label NOMUNILABEL;
     }
 }
