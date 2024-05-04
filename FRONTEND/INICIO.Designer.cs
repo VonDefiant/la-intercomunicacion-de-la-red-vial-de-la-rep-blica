@@ -36,7 +36,7 @@
             groupBox2 = new GroupBox();
             groupBox11 = new GroupBox();
             label4 = new Label();
-            dataGridView1 = new DataGridView();
+            lugaresview = new DataGridView();
             groupBox10 = new GroupBox();
             NOMUNILABEL = new Label();
             groupBox9 = new GroupBox();
@@ -59,7 +59,7 @@
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)lugaresview).BeginInit();
             groupBox10.SuspendLayout();
             groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MAPADEPABOX).BeginInit();
@@ -140,7 +140,7 @@
             // groupBox11
             // 
             groupBox11.Controls.Add(label4);
-            groupBox11.Controls.Add(dataGridView1);
+            groupBox11.Controls.Add(lugaresview);
             groupBox11.Location = new Point(1057, 90);
             groupBox11.Name = "groupBox11";
             groupBox11.Size = new Size(253, 184);
@@ -160,14 +160,14 @@
             label4.Text = "LUGARES TURISTICOS";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // lugaresview
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 44);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(229, 126);
-            dataGridView1.TabIndex = 4;
+            lugaresview.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            lugaresview.Location = new Point(12, 44);
+            lugaresview.Name = "lugaresview";
+            lugaresview.RowTemplate.Height = 25;
+            lugaresview.Size = new Size(229, 126);
+            lugaresview.TabIndex = 4;
             // 
             // groupBox10
             // 
@@ -192,6 +192,7 @@
             NOMUNILABEL.TabIndex = 0;
             NOMUNILABEL.Text = "*";
             NOMUNILABEL.UseWaitCursor = true;
+            NOMUNILABEL.Click += NOMUNILABEL_Click;
             // 
             // groupBox9
             // 
@@ -234,7 +235,9 @@
             distancialabel.Size = new Size(17, 19);
             distancialabel.TabIndex = 2;
             distancialabel.Text = "1";
+            distancialabel.TextAlign = ContentAlignment.MiddleCenter;
             distancialabel.UseWaitCursor = true;
+            distancialabel.Click += distancialabel_Click;
             // 
             // groupBox7
             // 
@@ -278,12 +281,13 @@
             // CABECERALABEL
             // 
             CABECERALABEL.AutoSize = true;
-            CABECERALABEL.Location = new Point(22, 31);
+            CABECERALABEL.Location = new Point(79, 31);
             CABECERALABEL.Name = "CABECERALABEL";
-            CABECERALABEL.Size = new Size(17, 19);
+            CABECERALABEL.Size = new Size(0, 19);
             CABECERALABEL.TabIndex = 0;
-            CABECERALABEL.Text = "*";
+            CABECERALABEL.TextAlign = ContentAlignment.MiddleCenter;
             CABECERALABEL.UseWaitCursor = true;
+            CABECERALABEL.Click += CABECERALABEL_Click;
             // 
             // groupBox5
             // 
@@ -388,7 +392,7 @@
             groupBox2.ResumeLayout(false);
             groupBox11.ResumeLayout(false);
             groupBox11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)lugaresview).EndInit();
             groupBox10.ResumeLayout(false);
             groupBox10.PerformLayout();
             groupBox9.ResumeLayout(false);
@@ -435,7 +439,7 @@
         private GroupBox groupBox9;
         private GroupBox groupBox11;
         private Label label4;
-        private DataGridView dataGridView1;
+        private DataGridView lugaresview;
         private GroupBox groupBox10;
         private Label NOMUNILABEL;
     }
