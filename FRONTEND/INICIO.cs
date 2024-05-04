@@ -17,6 +17,7 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
             InitializeComponent();
             CargarDepartamentosencombobox();
 
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -258,7 +259,11 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
                 MessageBox.Show("Error al mostrar la imagen del departamento: " + ex.Message);
             }
 
-
         }
+
+
+
+
+
     }
 }
