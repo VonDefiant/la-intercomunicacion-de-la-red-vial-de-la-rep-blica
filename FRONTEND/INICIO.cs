@@ -10,7 +10,8 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
     {
         string DBFILE = "Data Source = EXACTUS.db; Version = 3; ";
         string selectedDepartamento;
-        string imageFolderPath = "C://Users//fg144//OneDrive//Documentos//GitHub//la-intercomunicacion-de-la-red-vial-de-la-republica//FRONTEND//IMAGENES//Resources//";
+
+
         public INICIO()
         {
             InitializeComponent();
@@ -286,26 +287,24 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
         {
             try
             {
+                // Cargar la imagen desde los recursos incrustados
+                Image imagen = Properties.Resources.ResourceManager.GetObject(departamento) as Image;
 
-                string imagePath = Path.Combine(imageFolderPath, $"{departamento}.jpg");
-
-
-                if (File.Exists(imagePath))
+                if (imagen != null)
                 {
-
-                    MAPADEPABOX.ImageLocation = imagePath;
+                    MAPADEPABOX.Image = imagen;
                 }
                 else
                 {
-                    MessageBox.Show("La imagen para este departamento no existe.");
+                    MessageBox.Show("La imagen para este departamento no existe en los recursos.");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al mostrar la imagen del departamento: " + ex.Message);
             }
-
         }
+
 
 
 

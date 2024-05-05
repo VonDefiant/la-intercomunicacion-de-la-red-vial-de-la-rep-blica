@@ -65,7 +65,7 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república.Properties {
         /// </summary>
         public static System.Drawing.Bitmap Alta_Verapaz {
             get {
-                object obj = ResourceManager.GetObject("Alta_Verapaz", resourceCulture);
+                object obj = ResourceManager.GetObject("Alta Verapaz", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república.Properties {
         /// </summary>
         public static System.Drawing.Bitmap Baja_Verapaz {
             get {
-                object obj = ResourceManager.GetObject("Baja_Verapaz", resourceCulture);
+                object obj = ResourceManager.GetObject("Baja Verapaz", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,7 +105,7 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república.Properties {
         /// </summary>
         public static System.Drawing.Bitmap El_Progreso {
             get {
-                object obj = ResourceManager.GetObject("El_Progreso", resourceCulture);
+                object obj = ResourceManager.GetObject("El Progreso", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -117,6 +117,16 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república.Properties {
             get {
                 object obj = ResourceManager.GetObject("Escuintla", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        public static byte[] EXACTUS {
+            get {
+                object obj = ResourceManager.GetObject("EXACTUS", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -255,7 +265,7 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república.Properties {
         /// </summary>
         public static System.Drawing.Bitmap San_Marcos {
             get {
-                object obj = ResourceManager.GetObject("San_Marcos", resourceCulture);
+                object obj = ResourceManager.GetObject("San Marcos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -265,7 +275,7 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república.Properties {
         /// </summary>
         public static System.Drawing.Bitmap Santa_Rosa {
             get {
-                object obj = ResourceManager.GetObject("Santa_Rosa", resourceCulture);
+                object obj = ResourceManager.GetObject("Santa Rosa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
