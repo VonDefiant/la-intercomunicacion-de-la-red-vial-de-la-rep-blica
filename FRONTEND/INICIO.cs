@@ -287,7 +287,7 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
         {
             try
             {
-                // Cargar la imagen desde los recursos incrustados
+
                 Image imagen = Properties.Resources.ResourceManager.GetObject(departamento) as Image;
 
                 if (imagen != null)
