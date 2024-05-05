@@ -16,9 +16,65 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="BACKEND\EXACTUS.db" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Alta Verapaz.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Baja Verapaz.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Chimaltenango.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Chiquimula.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\El Progreso.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Escuintla.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Guatemala.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Huehuetenango.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Izabal.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Jalapa.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Jutiapa.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Péten.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Quetzaltenango.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Quiché.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Retalhuleu.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Sacatepéquez.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\San Marcos.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Santa Rosa.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Sololá.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Suchitepequez.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Totonicapan.jpg" />
+    <None Remove="FRONTEND\IMAGENES\DEPARTAMENTOS\Zacapa.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="SQLite" Version="3.13.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="BACKEND\EXACTUS.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="FRONTEND\IMAGENES\Resources\Alta Verapaz.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="FRONTEND\IMAGENES\Resources\Baja Verapaz.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Chimaltenango.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Chiquimula.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\El Progreso.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Escuintla.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Guatemala.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Huehuetenango.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Izabal.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Jalapa.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Jutiapa.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Péten.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Quetzaltenango.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Quiché.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Retalhuleu.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Sacatepéquez.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\San Marcos.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Santa Rosa.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Sololá.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Suchitepequez.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Totonicapan.jpg" />
+    <Resource Include="FRONTEND\IMAGENES\Resources\Zacapa.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,9 +87,13 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FRONTEND\IMAGENES\DEPARTAMENTOS\" />
   </ItemGroup>
 
 </Project>

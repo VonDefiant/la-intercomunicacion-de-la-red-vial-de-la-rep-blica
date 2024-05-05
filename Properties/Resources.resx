@@ -127,7 +127,70 @@
   <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\FRONTEND\IMAGENES\fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Alta Verapaz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alta Verapaz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Alta_Verapaz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Alta Verapaz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Baja_Verapaz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Baja Verapaz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chimaltenango" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Chimaltenango.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chiquimula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Chiquimula.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="El_Progreso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\El Progreso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Escuintla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Escuintla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guatemala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Guatemala.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Huehuetenango" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Huehuetenango.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Izabal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Izabal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jalapa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Jalapa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jutiapa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Jutiapa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Péten" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Péten.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Quetzaltenango" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Quetzaltenango.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Quiché" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Quiché.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Retalhuleu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Retalhuleu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sacatepéquez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Sacatepéquez.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Santa_Rosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Santa Rosa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="San_Marcos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\San Marcos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sololá" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Sololá.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Suchitepequez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Suchitepequez.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Totonicapan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Totonicapan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zacapa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\IMAGENES\Resources\Zacapa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

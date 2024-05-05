@@ -8,10 +8,9 @@ namespace la_intercomunicacion_de_la_red_vial_de_la_república
 {
     public partial class INICIO : Form
     {
-        string DBFILE = "Data Source = C://Users//fg144//OneDrive//Documentos//GitHub//la-intercomunicacion-de-la-red-vial-de-la-republica//BACKEND//EXACTUS.db; Version = 3; ";
+        string DBFILE = "Data Source = EXACTUS.db; Version = 3; ";
         string selectedDepartamento;
-        string imageFolderPath = "C://Users//fg144//OneDrive//Documentos//GitHub//la-intercomunicacion-de-la-red-vial-de-la-republica//FRONTEND//IMAGENES//DEPARTAMENTOS//";
-
+        string imageFolderPath = "C://Users//fg144//OneDrive//Documentos//GitHub//la-intercomunicacion-de-la-red-vial-de-la-republica//FRONTEND//IMAGENES//Resources//";
         public INICIO()
         {
             InitializeComponent();
